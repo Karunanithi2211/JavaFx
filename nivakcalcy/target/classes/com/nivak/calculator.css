@@ -1,0 +1,4 @@
+.button, #display{
+    -fx-font-weight: bolder;
+    -fx-font-size: larger;
+}

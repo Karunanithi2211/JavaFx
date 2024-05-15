@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="850.0" styleClass="create_client_container" stylesheets="@../../Styles/CreateClient.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nivak.Controllers.Admin.CreateClient">
+   <children>
+      <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create New Client:" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
+      <VBox fillWidth="false" layoutX="14.0" layoutY="45.0" prefHeight="700.0" prefWidth="600.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="First Name:" />
+            <TextField fx:id="fname_field" />
+            <Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name:" />
+            <TextField fx:id="lastname_field" layoutX="10.0" layoutY="27.0" />
+            <Text layoutX="10.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:" />
+            <TextField fx:id="password_field" layoutX="10.0" layoutY="70.0" />
+            <Text layoutX="10.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payee Address:" />
+            <CheckBox fx:id="payee_address_box" mnemonicParsing="false" />
+            <Label fx:id="payee_address_lbl" styleClass="payee_address_lbl" />
+            <Text layoutX="10.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accounts:" />
+            <CheckBox fx:id="add_checing_acc" layoutX="10.0" layoutY="155.0" mnemonicParsing="false" text="Add Checking Accounts" />
+            <Text layoutX="10.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Checking Account Balance:" />
+            <TextField fx:id="checking_acc_bal" layoutX="10.0" layoutY="111.0" />
+            <CheckBox fx:id="add_saving_acc" layoutX="10.0" layoutY="205.0" mnemonicParsing="false" text="Add Savings Accounts" />
+            <Text layoutX="10.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Savings Account Balance:" />
+            <TextField fx:id="saving_acc_bal" layoutX="10.0" layoutY="241.0" />
+            <Button fx:id="new_client_btn" mnemonicParsing="false" text="Create New Client" />
+            <Label fx:id="error_lbl" layoutX="10.0" layoutY="170.0" styleClass="error_lbl" text="error:" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
